@@ -15,6 +15,8 @@
 		CA32679A2282D2F4004CD351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3267992282D2F4004CD351 /* main.m */; };
 		CA3267A42282D2F4004CD351 /* BaiduNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3267A32282D2F4004CD351 /* BaiduNavigationTests.m */; };
 		CA3267AF2282D2F4004CD351 /* BaiduNavigationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3267AE2282D2F4004CD351 /* BaiduNavigationUITests.m */; };
+		CA3F37B222963D9000FED2FC /* ImageDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3F37B122963D9000FED2FC /* ImageDownloadManager.m */; };
+		EE2EF7785E4413B5724D79B7 /* libPods-BaiduNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E49EFCB986FE0863340EF66 /* libPods-BaiduNavigation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1455C3CCD6813363A7913B41 /* Pods-BaiduNavigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduNavigation.release.xcconfig"; path = "Target Support Files/Pods-BaiduNavigation/Pods-BaiduNavigation.release.xcconfig"; sourceTree = "<group>"; };
+		5A340E0D565BF94FF48CE07B /* Pods-BaiduNavigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduNavigation.debug.xcconfig"; path = "Target Support Files/Pods-BaiduNavigation/Pods-BaiduNavigation.debug.xcconfig"; sourceTree = "<group>"; };
+		7E49EFCB986FE0863340EF66 /* libPods-BaiduNavigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaiduNavigation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3267872282D2F2004CD351 /* BaiduNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA32678A2282D2F2004CD351 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA32678B2282D2F2004CD351 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		CA3267AA2282D2F4004CD351 /* BaiduNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiduNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3267AE2282D2F4004CD351 /* BaiduNavigationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduNavigationUITests.m; sourceTree = "<group>"; };
 		CA3267B02282D2F4004CD351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3F37B022963D9000FED2FC /* ImageDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDownloadManager.h; sourceTree = "<group>"; };
+		CA3F37B122963D9000FED2FC /* ImageDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2EF7785E4413B5724D79B7 /* libPods-BaiduNavigation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33CCB63058AFC10B2B341D8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E49EFCB986FE0863340EF66 /* libPods-BaiduNavigation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA32677E2282D2F2004CD351 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				CA3267A22282D2F4004CD351 /* BaiduNavigationTests */,
 				CA3267AD2282D2F4004CD351 /* BaiduNavigationUITests */,
 				CA3267882282D2F2004CD351 /* Products */,
+				E8CF0911C604C10F7A7DE7A8 /* Pods */,
+				33CCB63058AFC10B2B341D8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +121,8 @@
 			children = (
 				CA32678A2282D2F2004CD351 /* AppDelegate.h */,
 				CA32678B2282D2F2004CD351 /* AppDelegate.m */,
+				CA3F37B022963D9000FED2FC /* ImageDownloadManager.h */,
+				CA3F37B122963D9000FED2FC /* ImageDownloadManager.m */,
 				CA32678D2282D2F2004CD351 /* ViewController.h */,
 				CA32678E2282D2F2004CD351 /* ViewController.m */,
 				CA3267902282D2F2004CD351 /* Main.storyboard */,
@@ -132,6 +152,15 @@
 			path = BaiduNavigationUITests;
 			sourceTree = "<group>";
 		};
+		E8CF0911C604C10F7A7DE7A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A340E0D565BF94FF48CE07B /* Pods-BaiduNavigation.debug.xcconfig */,
+				1455C3CCD6813363A7913B41 /* Pods-BaiduNavigation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3267B32282D2F4004CD351 /* Build configuration list for PBXNativeTarget "BaiduNavigation" */;
 			buildPhases = (
+				873B35E31BC490C60556DEC6 /* [CP] Check Pods Manifest.lock */,
 				CA3267832282D2F2004CD351 /* Sources */,
 				CA3267842282D2F2004CD351 /* Frameworks */,
 				CA3267852282D2F2004CD351 /* Resources */,
+				59B9A45AD755B26861698244 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +288,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59B9A45AD755B26861698244 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaiduNavigation/Pods-BaiduNavigation-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaiduNavigation/Pods-BaiduNavigation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873B35E31BC490C60556DEC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaiduNavigation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA3267832282D2F2004CD351 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +343,7 @@
 				CA32678F2282D2F2004CD351 /* ViewController.m in Sources */,
 				CA32679A2282D2F4004CD351 /* main.m in Sources */,
 				CA32678C2282D2F2004CD351 /* AppDelegate.m in Sources */,
+				CA3F37B222963D9000FED2FC /* ImageDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +512,7 @@
 		};
 		CA3267B42282D2F4004CD351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A340E0D565BF94FF48CE07B /* Pods-BaiduNavigation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,12 +524,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongge.BaiduNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CA3267B52282D2F4004CD351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1455C3CCD6813363A7913B41 /* Pods-BaiduNavigation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,7 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongge.BaiduNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
